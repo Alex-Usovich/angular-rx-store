@@ -1,0 +1,22 @@
+<div class="app note container">
+
+  <div class="app note note-shown"
+       *ngIf="!note.isBeingEdited"
+       (click)="toggleEditingNote(note?.id, true)">
+    {{ note?.text }}
+  </div>
+
+  <div class="app note note-edited">
+    <input *ngIf="note.isBeingEdited"
+           (blur)="toggleEditingNote(note?.id, false)"
+           type="text"
+           placeholder="Change info"
+           value="{{note?.text}}"/>
+  </div>
+
+  <div class="app note buttons">
+    <div class="app note button-remove">
+      <button (click)="removeNote(note?.id)">Delete..</button>
+    </div>
+  </div>
+</div>

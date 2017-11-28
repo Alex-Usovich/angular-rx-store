@@ -1,0 +1,30 @@
+div.app.note-form {
+  display: flex;
+  flex-direction: column;
+}
+
+div.app.note-form.title {
+  background-color: rgb(178, 97, 26);
+  align-items: center;
+  color: white;
+}
+
+div.app.note-form.form {
+  display: flex;
+  flex-direction: column;
+}
+
+div.app.note-form.warning {
+
+
+}
+
+div.app.note-form.form.note-add-button {
+  align-items: center;
+}
+
+div.app.note-form.form.note-add-button button{
+  width: 10vw;
+  height: 5vh;
+  margin: 10px;
+}

@@ -1,0 +1,20 @@
+<div class="app note-form">
+  <div class="app note-form title">
+    <h3>Put a note..</h3>
+  </div>
+
+  <div class="app note-form form">
+    <form [formGroup]="formGroup">
+      <div class="app note-form form note-text">
+        <textarea id="note-text" name="note__text" placeholder="Enter text here.." formControlName="text"></textarea>
+      </div>
+      <div class="app note-form form note-add-button">
+        <button (click)="add($event)">Add note</button>
+      </div>
+    </form>
+  </div>
+  <div class="app note-form warning" *ngIf="getFormErrors()?.text?.state"
+        (click)="hideError('text')">
+    {{ 'Form data is not valid to be used' }}
+  </div>
+</div>

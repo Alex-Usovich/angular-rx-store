@@ -1,0 +1,13 @@
+div.app.state-history-viewer.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  padding: 15px;
+
+}
+
+div.app.state-history-viewer.navigation input[type=button] {
+  padding:  5px;
+  margin:   5px;
+}

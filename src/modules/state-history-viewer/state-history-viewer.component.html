@@ -1,0 +1,20 @@
+<div class="app state-history-viewer">
+  <div class="app state-history-viewer title">
+    <h3> State History Viewer </h3>
+  </div>
+
+  <div class="app state-history-viewer content">
+    <state-history-viewer-navigation
+      (handlePast$)="handlePast($event)"
+      (handleFuture$)="handleFuture($event)">
+    </state-history-viewer-navigation>
+
+    <state-history-viewer-output
+      [presentState$]="presentState$">
+    </state-history-viewer-output>
+
+    <demo-shared-note-list
+      [notes$]="presentState$">
+    </demo-shared-note-list>
+  </div>
+</div>

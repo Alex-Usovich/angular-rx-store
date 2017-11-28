@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+input[type=button], button {
+  box-shadow: 5px 5px 1px #888888;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}

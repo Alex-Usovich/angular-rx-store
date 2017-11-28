@@ -1,0 +1,16 @@
+div.app.state-history-viewer.output {
+  display: flex;
+  flex-direction: column;
+}
+
+div.app.state-history-viewer.output.title {
+  background-color: rgb(196, 43, 43);
+  color: white;
+  align-items: center;
+}
+
+div.app.state-history-viewer.output.content {
+  padding: 10px;
+  max-height: 20vh;
+  overflow-y: scroll;
+}

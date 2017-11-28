@@ -1,0 +1,16 @@
+div.app.state-history-viewer {
+  display: flex;
+  flex-direction: column;
+  width: 33vw;
+
+}
+
+div.app.state-history-viewer.title {
+  background-color: rgb(196, 43, 43);
+  color: white;
+  align-items: center;
+}
+
+div.app.state-history-viewer.content {
+
+}

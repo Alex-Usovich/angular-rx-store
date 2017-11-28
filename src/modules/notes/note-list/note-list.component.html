@@ -1,0 +1,14 @@
+<div class="app note-list">
+  <div class="app note-list title">
+    <h3>List of notes</h3>
+  </div>
+  <div class="app note-list content">
+    <ng-container *ngFor="let note of notes">
+      <demo-shared-note
+        [note]="note"
+        (toggleEditingNote$)="toggleEditingNote($event)"
+        (removeNote$)="removeNote($event)">
+      </demo-shared-note>
+    </ng-container>
+  </div>
+</div>

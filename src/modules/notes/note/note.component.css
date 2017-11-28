@@ -1,0 +1,19 @@
+div.app.note.container {
+  display: flex;
+  flex-direction: row;
+}
+
+div.app.note .note-shown, .note-edited, .button-remove  {
+  padding: 10px;
+}
+
+
+
+div.app.note.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+div.app.note.buttons button{
+  cursor: pointer;
+}
